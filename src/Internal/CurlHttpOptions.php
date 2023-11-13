@@ -51,7 +51,7 @@ final class CurlHttpOptions implements \ArrayAccess
         return isset($this->http_options[$offset]);
     }
 
-    public function offsetGet($offset)
+    public function offsetGet($offset): mixed
     {
         return $this->http_options[$offset];
     }

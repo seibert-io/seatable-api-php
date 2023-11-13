@@ -21,7 +21,7 @@ use Throwable;
  */
 class RestCurlClientExResponseException extends Exception implements RestCurlClientExException
 {
-    private $result;
+    private string $result;
 
     public function __construct(string $result, $message = "", $code = 0, Throwable $previous = null)
     {
